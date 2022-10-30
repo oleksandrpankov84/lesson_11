@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+body{
+	font-family: "Lato";
+}
+.wrapper{
+	position: relative;
+	min-height: 100%;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background-color: aquamarine;
+	width: 100%;
+	z-index: 100;
+}
+.menu{
+	text-align: center;
+}
+.menu__item{
+	display: inline-block;
+	position: relative;
+	min-height: 100%;
+}
+.menu__item:not(:last-child){
+	margin-right: 50px;
+}
+.menu__item ul{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu__item:hover ul{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+	background-color: aqua;
+	}
+.practice{
+	
+	padding-top: 75px;
+	min-width: 900px;
+	background-color: chocolate;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.practice__title{
+	padding: 15px;
+	font-size: 24px;
+	font-weight: 700;
+}
+.practice__block{
+	padding: 15px;
+}
+.practice__block--yellow{
+	background-color: yellow;
+}
+.practice__block--green{
+	background-color: green;
+}
+.practice__block--red{
+	background-color: red;
+}
+.test{
+	font-weight: 800;
+	position: relative;
+	top: -15px;
+	left: -30px;
+}
+.absol{
+	position: absolute;
+	left: 30%;
+}
+.fix{
+	position: fixed;
+	top: 200px;
+	left: 0;
+}
+.sticky .practice__block--yellow{
+	position: sticky;
+	top: 60px;
+	z-index: 110;
+}
+.sticky{
+	margin-bottom: 1000px;
+}
+.car__container{
+	width: 500px;
+	margin: 0 auto;
+	position:relative;
+}
+.car__carcass{
+	background-color: brown;
+	width: 500px;
+	height: 150px;
+	border-radius: 91% 9% 92% 8% / 47% 98% 2% 53% ;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+.car__top{
+	background-color: brown;
+	width: 250px;
+	height: 80px;
+	border-radius: 82% 18% 100% 0% / 100% 99% 1% 0% ;
+	position: absolute;
+	top: -50px;
+	left: 150px;
+	z-index: 2;
+}
+.car__wheel{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -200px;
+	left: 50px;
+	z-index: 3;
+	border: 20px solid gray;
+}
+.car__backwheel{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -200px;
+	right: 50px;
+	z-index: 3;
+	border: 20px solid gray;
+}
